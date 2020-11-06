@@ -1,0 +1,314 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+}
+
+body {
+    background: url("../img/floral.jpg");
+    background-attachment: fixed;
+}
+
+section {
+    margin: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+/* ------------------------------------- HEADER  / FOOTER ----------------------------------------*/
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex!important;
+    justify-content: center;
+    background-color: #F5EAF1;
+}
+
+header nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav i {
+    color: #333;
+}
+
+/* FOOTER */
+
+footer {
+    
+    display: flex!important;
+    justify-content: center;
+    width: 100%;
+    background-color: #F5EAF1;
+    margin-top: 40px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* MAIN */
+
+main {
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container {
+    background-color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    -webkit-box-shadow: -4px 122px 20px 121px rgba(245,234,241,0.5);
+    -moz-box-shadow: -4px 122px 20px 121px rgba(245,234,241,0.5);
+    box-shadow: -4px 122px 20px 121px rgba(245,234,241,0.5);
+}
+
+.container ul {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 0;
+}
+
+.container ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 40%;
+    margin: 30px 0;
+    padding: 0 20px 10px 0;
+
+}
+
+.container ul li img {
+    width: 200px;
+    height: 160px;
+}
+
+.container ul li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container ul li div h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container ul li div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container ul li div a:hover {
+    color: #8E3FFF;
+}
+
+.container ul li div .price {
+    font-weight: bold;
+    color: #8E3FFF;
+}
+
+.container ul li div button {
+    inline-size: auto;
+    align-items: center;
+    background-color: #F5EAF1;
+    border: 1px solid black;
+}
+
+/* ----------------------------------------------- */
+
+
+.container a {
+    margin: 15px;
+}
+
+.container h2 {
+    margin: 15px 0;
+}
+
+.container form {
+    margin: 20px ;
+}
+
+.container .basketList {
+    width: -webkit-fill-available;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .basketList li {
+    width: auto;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    -webkit-box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
+}
+
+.container .basketList li .infoBasket {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.deleteAllButton {
+    width: max-content;
+}
+
+.totalPrice {
+   border-top: 1px solid black;
+   margin: 15px 0;
+   padding: 15px 0;
+   font-weight: bold;
+}
+
+
+.validate {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.validate div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.validate .thankyou {
+    font-size: 20px;
+}
+
+svg {
+    color: green;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+   
+
+}
+
+/* -------------------------------------- */
+
+.container2 {
+    background-color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " imgProduct infoProduct ";
+}
+
+.container2 .imgProduct {
+    grid-area: imgProduct;
+    padding: 15px;
+}
+
+.container2 .infoProduct {
+    grid-area: infoProduct;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container2 .infoProduct .price {
+    font-weight: bold;
+    color: #8E3FFF;
+}
+
+.container2 .infoProduct p {
+    font-style: italic;
+    color: #777;
+}
+
+.container2 .infoProduct button {
+    background-color: #F5EAF1;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+@media all and (max-width:700px) {
+    
+    .container ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2 .imgProduct {
+        flex: 1;
+    }
+    
+    .container2 .infoProduct {
+        flex: 2;
+    }
+}
+
+@media all and (max-width:470px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+    }
+}
